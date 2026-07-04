@@ -57,6 +57,20 @@ if (!isAvailable) {
     console.log("In stock");
 }
 
+// ===== NESTED IF / ELSE =====
+let isLoggedIn2 = true;
+let cartTotal5 = 3000;
+
+if (isLoggedIn2) {
+    if (cartTotal5 > 2000) {
+        console.log("Free shipping applied");
+    } else {
+        console.log("Shipping charges apply");
+    }
+} else {
+    console.log("Please login first");
+}
+
 // ===== TERNARY OPERATOR =====
 let cartTotal4 = 2500;
 let shippingMessage = cartTotal4 >= 2000 ? "Free Shipping" : "Shipping Charges Apply";
